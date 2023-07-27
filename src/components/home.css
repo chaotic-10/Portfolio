@@ -1,0 +1,262 @@
+.container {
+    text-align: center;
+  }
+  
+  .rounded-circle {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .rounded-circle::before {
+    content: '';
+    position: absolute;
+    border: 2px solid transparent;
+    border-top-color: #faf60d;
+    border-radius: 50%;
+    top: -5px;
+    left: -5px; 
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .rounded-circle:hover {
+    transform: rotate(5deg);
+  }
+  
+  .rounded-circle:hover::before {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+@keyframes typing { from { width: 0; } }
+/* @keyframes blink-caret { 50% { border-color: transparent; } } */
+
+h1 { 
+	font: bold 300% Consolas, Monaco, monospace;
+	/* border-right: .1em solid black; */
+    color: aliceblue;
+	width: 16.5em; 
+	width: 21ch;
+	margin-top: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 1.5s steps(21, end);
+	           /* blink-caret .5s step-end infinite alternate; */
+}
+p { 
+	font: bold 160% Consolas, Monaco, monospace;
+	/* border-right: .1em solid black; */
+    color: aliceblue;
+	width: 16.5em; 
+	/* display: flex;
+    justify-content: center; */
+    
+}
+/* Default styles for all screen sizes */
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 20rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  img {
+    height: 15rem; /* Reduce image height on smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Slightly smaller font size for h1 on smaller screens */
+  }
+
+  p {
+    font-size: 1.2rem; /* Slightly smaller font size for p on smaller screens */
+  }
+
+  a {
+    font-size: 1rem; /* Smaller font size for the link text on smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 12rem; /* Further reduce image height on even smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly smaller font size for h1 on even smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller font size for p on even smaller screens */
+  }
+
+  a {
+    font-size: 0.8rem; /* Smaller font size for the link text on even smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    height: 10rem; /* Adjust image height for the smallest screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for h1 on the smallest screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust font size for p on the smallest screens */
+    color: #d3d3d3;
+  font-size: 1.2rem;
+  }
+}
+
+
+ 
+
+  /* home.css */
+
+
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  /* margin-top: 2rem; */
+}
+
+p {
+  color: #d3d3d3;
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+a img {
+  height: 3rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  color: #f1c40f;
+}
+/* Add the glowing animation to the image */
+.glowing-image {
+  animation: glowAnimation 2s infinite;
+}
+
+/* Define the keyframes for the glow animation */
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 5px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #f1c40f;
+  }
+  100% {
+    box-shadow: 0 0 5px #fff;
+  }
+}
+/* ... Your other CSS styles ... */
+
+h1 {
+  font: bold 300% Consolas, Monaco, monospace;
+  /* border-right: .1em solid black; */
+  color: aliceblue;
+  width: 16.5em;
+  width: 21ch;
+  margin-top: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typing 1.5s steps(21, end);
+  /* blink-caret .5s step-end infinite alternate; */
+}
+
+p {
+  font: bold 160% Consolas, Monaco, monospace;
+  /* border-right: .1em solid black; */
+  color: aliceblue;
+  width: 16.5em;
+  /* display: flex;
+    justify-content: center; */
+}
+
+/* ... Your other CSS styles ... */
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  img {
+    height: 15rem; /* Reduce image height on smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Slightly smaller font size for h1 on smaller screens */
+  }
+
+  p {
+    font-size: 1.2rem; /* Slightly smaller font size for p on smaller screens */
+  }
+
+  a {
+    font-size: 1rem; /* Smaller font size for the link text on smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    height: 12rem; /* Further reduce image height on even smaller screens */
+  }
+
+  h1 {
+    font-size: 1.8rem; /* Slightly smaller font size for h1 on even smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Smaller font size for p on even smaller screens */
+  }
+
+  a {
+    font-size: 0.8rem; /* Smaller font size for the link text on even smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img {
+    height: 10rem; /* Adjust image height for the smallest screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust font size for h1 on the smallest screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust font size for p on the smallest screens */
+    color: #d3d3d3;
+  }
+}

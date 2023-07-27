@@ -1,0 +1,58 @@
+/* custom.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Change the background color and add a subtle pattern */
+.navbar {
+  background-color: #293241; /* Dark blue background */
+  /* background-image: url("path-to-your-pattern-image.png"); Replace with your pattern image */
+  padding: 10px 20px; /* Add some padding for better spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+}
+
+/* Change the font and style of the links */
+.navbar-nav .nav-link {
+  font-family: 'Roboto', sans-serif; /* Import the 'Roboto' font from Google Fonts */
+  font-size: 1.2rem;
+  color: #f0f0f0; /* Light gray text color */
+  font-weight: 500;
+  text-decoration: none;
+  padding: 5px 10px; /* Add padding to the links for better spacing */
+  position: relative; /* Needed for positioning the ::after pseudo-element */
+  transition: color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+/* Add a subtle underline effect on hover */
+.nav-link:hover {
+  color: #e0ce25; /* Golden yellow text color on hover */
+}
+
+/* Style the active link */
+.active-link {
+  color: #e0ce25; /* Golden yellow color for the active link */
+  border-bottom: 2px solid #e0ce25; /* Golden yellow underline for the active link */
+}
+
+/* Animation for the white underline on hover */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Align the underline with the text */
+  width: 100%;
+  height: 2px;
+  background-color: #e0ce25; /* Golden yellow color for the underline */
+  transform: scaleX(0); /* Initially set the width to 0 to hide the underline */
+  transform-origin: left;
+  transition: transform 0.5s ease; /* Add a slow animation */
+}
+
+/* Show the white underline on hover */
+.nav-link:hover::after {
+  transform: scaleX(1); /* Expand the width to show the underline on hover */
+}
