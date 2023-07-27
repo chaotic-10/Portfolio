@@ -1,8 +1,4 @@
-# React + Vite
+Fully responsive Portfolio Website, designed using Customised CSS applied on Bootstrap. And ReactJs is used for the SPA's creation.
+It was created with usage of Open Movie Database API (https://www.omdbapi.com/).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot_6](https://github.com/chaotic-10/Portfolio/assets/104820006/a28269c3-8cd0-4ccb-9a12-056521cb1ad2)
